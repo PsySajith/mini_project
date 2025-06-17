@@ -1,6 +1,6 @@
 # 🍽️ Restaurant Management System (Python OOP)
 
-A simple console-based restaurant billing system built using Python and Object-Oriented Programming concepts.
+A simple console-based restaurant order and billing system built using Python and Object-Oriented Programming concepts.
 
 # 💡 Features
 - Display food menu

@@ -59,6 +59,14 @@ class Order:
         print(f"Your Total bill: {self.calculate_total()}")
         print("\nThank you for coming! Please visit Again!!")
 
+   def save_to_file(self, customer_name="Guest"):
+        with open("orders.txt", "a") as file:
+            file.write(f"\nOrder for {customer_name}:\n")
+            for item, quantity in self.items_order.items():
+                file.write(f"{item.item_name} x {quantity} = ${item.price * quantity:.2f}\n")
+            file.write(f"Total: ${self.calculate_total():.2f}\n")
+            file.write("-" * 30 + "\n")
+
 
 class Restaurant:         # main class which coordinate menu and order
 
